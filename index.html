@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p id="display"></p>
+
+<button onclick="showday()">Today is...</button>
+
+<script>
+function showday() {
+    var d = new Date();
+    var n = d.getDay();
+    switch (new Date().getDay()) {
+    case 0:
+        n = "Sunday";
+        break;
+    case 1:
+        n = "Monday";
+        break;
+    case 2:
+        n = "Tuesday";
+        break;
+    case 3:
+        n = "Wednesday";
+        break;
+    case 4:
+        n = "Thursday";
+        break;
+    case 5:
+        n = "Friday";
+        break;
+    case 6:
+        n = "Saturday";
+}
+    document.getElementById("display").innerHTML = "Hello, today is " + n;
+}
+</script>
+
+</body>
+</html>
